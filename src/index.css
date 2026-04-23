@@ -400,6 +400,13 @@ body {
 }
 
 /* Phase 3 Showroom Styles */
+.shop-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px 48px;
+}
+
 .showroom-layout {
   max-width: 1400px;
   margin: 0 auto;
@@ -422,16 +429,54 @@ body {
   .showroom-sidebar {
     width: 200px;
   }
+  .shop-header {
+    padding: 20px 32px;
+  }
 }
 
 @media (max-width: 768px) {
   .showroom-layout {
     flex-direction: column;
-    padding: 24px 24px 80px;
+    padding: 24px 20px 80px;
+    gap: 24px;
   }
   .showroom-sidebar {
     width: 100%;
     margin-bottom: 0px;
+  }
+  .shop-header {
+    padding: 16px 20px;
+    flex-wrap: wrap;
+    gap: 16px;
+  }
+  .brand-logo {
+    white-space: nowrap;
+    font-size: 1.1rem;
+    letter-spacing: 0.1em;
+  }
+  .search-bar-wrapper {
+    order: 3; /* Push to next line */
+    max-width: 100%;
+  }
+  .cart-text {
+    display: none; /* Hide text on mobile to save space */
+  }
+  .option-btn {
+    padding: 10px 14px;
+    border-radius: 50%; /* Make cart circular icon button */
+    aspect-ratio: 1/1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .horizontal-categories-wrapper {
+    margin-bottom: 24px !important;
+  }
+  .cat-pill {
+    padding: 10px 16px;
+  }
+  .cat-pill span:last-child {
+    font-size: 14px;
   }
 }
 

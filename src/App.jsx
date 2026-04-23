@@ -252,7 +252,7 @@ export default function App() {
     return (
       <div className="shop-container" style={{ minHeight: '100vh', backgroundColor: '#fff', display: 'flex', flexDirection: 'column' }}>
         {/* Top Navbar */}
-        <header className="shop-header" style={{ position: 'sticky', top: 0, zIndex: 100, backgroundColor: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(10px)', borderBottom: '1px solid #f0f0f0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '24px 48px', width: '100%' }}>
+        <header className="shop-header" style={{ position: 'sticky', top: 0, zIndex: 100, backgroundColor: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(10px)', borderBottom: '1px solid #f0f0f0', width: '100%' }}>
           <div className="brand-logo font-en">SP EMPIRE F</div>
           
           {/* Main Search Bar */}
@@ -267,10 +267,10 @@ export default function App() {
             />
           </div>
 
-          <div style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
+          <div className="header-actions" style={{ display: 'flex', gap: '16px', alignItems: 'center' }}>
             <button className="option-btn no-border" onClick={() => setStep('summary')}>
               <Icons.Cart />
-              <span className="th-text" style={{ fontSize: '14px' }}>ตะกร้าสินค้า ({cart.length})</span>
+              <span className="th-text cart-text" style={{ fontSize: '14px' }}>ตะกร้าสินค้า ({cart.length})</span>
             </button>
           </div>
         </header>
