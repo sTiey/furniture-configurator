@@ -8,6 +8,11 @@
   </head>
   <body>
     <div id="root"></div>
+    <script>
+      window.addEventListener('error', function(e) {
+        document.body.innerHTML += '<div style="color:red; padding: 20px; font-family: sans-serif; z-index: 9999; position: absolute; top:0;"><h1>Error</h1><pre>' + e.message + '\n' + e.filename + ':' + e.lineno + '</pre></div>';
+      });
+    </script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
