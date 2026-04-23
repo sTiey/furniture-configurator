@@ -253,7 +253,7 @@ export default function App() {
       <div className="shop-container" style={{ minHeight: '100vh', backgroundColor: '#fff', display: 'flex', flexDirection: 'column' }}>
         {/* Top Navbar */}
         <header className="shop-header" style={{ position: 'sticky', top: 0, zIndex: 100, backgroundColor: 'rgba(255,255,255,0.95)', backdropFilter: 'blur(10px)', borderBottom: '1px solid #f0f0f0', display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '24px 48px', width: '100%' }}>
-          <div className="brand-logo font-en">LUMINA</div>
+          <div className="brand-logo font-en">SP EMPIRE F</div>
           
           {/* Main Search Bar */}
           <div className="search-bar-wrapper">
